@@ -1,7 +1,9 @@
 {
-  "name": "react-template",
+  "name": "reflab.react-template",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:11080",
+  "homepage": "/TEMPLATE/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,8 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=6000 react-scripts start",
     "build": "react-scripts build",
+    "deploy": "cp -r build dist.new && rm -rf dist.old && mv dist dist.old 2>/dev/null || true  && mv dist.new dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
