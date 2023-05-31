@@ -18,3 +18,6 @@ create the minified js ready to be deployed
 
 create dist folder and related files
 
+### to start from here
+
+fork the project and adjust the relative configurations in profiles/env, the packages in package.json and the relative proxy
